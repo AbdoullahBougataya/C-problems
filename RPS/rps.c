@@ -8,7 +8,7 @@ int main(void)
     char computerInput;
     int zot;
     printf("player ( r: rock / p: paper / s: scissors ): ");
-    scanf("%c \n", &playerInput);
+    scanf("%[^\n]c", playerInput);
     srand(time(0));
     zot = rand() % 3;
     computerInput = (zot == 0)? 114:computerInput;
