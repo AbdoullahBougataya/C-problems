@@ -11,7 +11,6 @@ int main(void)
     scanf("%[^\n]c", playerInput);
     srand(time(0));
     zot = rand() % 3;
-    printf("%i\n", zot);
     computerInput = (zot == 0)? 114:computerInput;
     computerInput = (zot == 1)? 112:computerInput;
     computerInput = (zot == 2)? 115:computerInput;
