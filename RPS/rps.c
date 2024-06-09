@@ -15,7 +15,6 @@ int main(void)
     computerInput = (zot == 0)? 114:computerInput;
     computerInput = (zot == 1)? 112:computerInput;
     computerInput = (zot == 2)? 115:computerInput;
-    computerInput = 115;
     printf("computer ( r: rock / p: paper / s: scissors ): %c\n", computerInput);
     if((playerInput == 114 && computerInput == 115) || (playerInput == 112 && computerInput == 114) || (playerInput == 115 && computerInput == 112))
     {
