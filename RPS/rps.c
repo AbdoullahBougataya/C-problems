@@ -11,11 +11,11 @@ int main(void)
     scanf("%[^\n]c", playerInput);
     srand(time(0));
     zot = rand() % 3;
-    computerInput = (zot == 0)? 114:computerInput;
-    computerInput = (zot == 1)? 112:computerInput;
-    computerInput = (zot == 2)? 115:computerInput;
+    computerInput = (zot == 0)? 'r':computerInput;
+    computerInput = (zot == 1)? 'p':computerInput;
+    computerInput = (zot == 2)? 's':computerInput;
     printf("computer ( r: rock / p: paper / s: scissors ): %c\n", computerInput);
-    if((playerInput == 114 && computerInput == 115) || (playerInput == 112 && computerInput == 114) || (playerInput == 115 && computerInput == 112))
+    if((playerInput == 'r' && computerInput == 's') || (playerInput == 112 && computerInput == 114) || (playerInput == 115 && computerInput == 112))
     {
         printf("draw\n");
     }
